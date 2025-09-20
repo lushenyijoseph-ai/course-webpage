@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Faculty of Science and Technology - Courses</title>
+  <style>
+    /* Reset */
+    body, h1, h2, p, ul {
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    /* Navigation Bar */
+    nav {
+      background-color: royalblue;
+      color: white;
+      padding: 15px;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    /* Layout */
+    .container {
+      display: flex;
+      flex: 1;
+    }
+    /* Sidebar */
+    aside {
+      width: 200px;
+      background: #f4f4f4;
+      padding: 15px;
+      border-right: 1px solid #ccc;
+      position: fixed;
+      top: 60px;
+      bottom: 40px;
+    }
+    aside ul {
+      list-style: none;
+      padding: 0;
+    }
+    aside ul li {
+      margin: 10px 0;
+    }
+    /* Main Content */
+    main {
+      margin-left: 220px;
+      padding: 20px;
+      flex: 1;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 15px;
+    }
+    table, th, td {
+      border: 1px solid black;
+    }
+    th, td {
+      padding: 10px;
+      text-align: center;
+    }
+    /* Footer */
+    footer {
+      background: #222;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Sidebar -->
+  <aside>
+    <h3>Menu</h3>
+    <ul>
+      <li>Dashboard</li>
+      <li>Courses</li>
+      <li>Settings</li>
+      <li>Profile</li>
+    </ul>
+  </aside>
+
+  <!-- Main Content -->
+  <main>
+    <h1>Faculty of Science and Technology</h1>
+    <h2>Course List</h2>
+    <table>
+      <tr>
+        <th>No.</th>
+        <th>Course Code</th>
+        <th>Course Title</th>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>CSC101</td>
+        <td>Introduction to Programming</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>MAT102</td>
+        <td>Calculus I</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>PHY103</td>
+        <td>Physics Fundamentals</td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>ICT104</td>
+        <td>Information Systems</td>
+      </tr>
+    </table>
+
+    <h3>Student Info</h3>
+    <p><strong>Name:</strong> Lushenyi Joseph</p>
+    <p><strong>Contact:</strong> 0746913315</p>
+    <p><strong>Registration No:</strong> 25/U/BEICT/0023/M/DAY</p>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    &copy; <span id="year"></span> Faculty of Science and Technology - All Rights Reserved
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
